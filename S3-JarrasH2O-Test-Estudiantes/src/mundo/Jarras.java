@@ -77,6 +77,21 @@ public class Jarras
             jarra6 = 0; 
         }
     }
+
+    // Métodos de clonación
+
+    public Jarras clone(Object obj){
+        
+        Jarras objn = (Jarras) obj;
+        Jarras objc = new Jarras();
+
+        objc.setJarra6(objn.getJarra6());
+        objc.setJarra8(objn.getJarra8());
+        
+        return objn;
+        
+        
+    }
     
  
 }
